@@ -4,10 +4,13 @@ import './styles.css';
 
 function reg() {
     let hossz = document.getElementById('username').value.toString();
-    if ( hossz.length > 3) {        
+    if ( hossz.length >= 3) {        
         document.getElementById('username').value.toLowerCase();
-    } else {
+    } else{
         window.alert('Nem elég hosszú!');
+    }
+    if (document.getElementById('beemail').value.includes('@')) {
+        console.log('Müködik a @');
     }
     
     
