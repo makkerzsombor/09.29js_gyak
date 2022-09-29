@@ -6,4 +6,5 @@ function reg() {
     console.log('Müködik');
 }
 
+console.log('Loaded');
 document.getElementById('gomb').addEventListener('click',reg);
