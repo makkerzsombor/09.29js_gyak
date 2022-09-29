@@ -3,7 +3,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
 
 function reg() {
-    console.log('Müködik');
+    let hossz = document.getElementById('username').value.toString();
+    if ( hossz.length > 3) {        
+        document.getElementById('username').value.toLowerCase();
+    } else {
+        window.alert('Nem elég hosszú!');
+    }
+    
+    
+
 }
 
 console.log('Loaded');
