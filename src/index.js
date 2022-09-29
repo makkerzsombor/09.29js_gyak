@@ -17,7 +17,19 @@ function reg() {
         window.alert('Az email nem tartalmaz @-ot.');
     }    
     if (jelszo1.length >= 8 && jelszo2.length >= 8) {
-        console.log('Megvan a minimum 8 karakter');
+        let szam = false;
+        let betu = false;
+        for (let i = 0; i < document.getElementById('password1').length; i++) {            
+           if (document.getElementById('password1')[i].typeof = 'number') {
+            
+           }else if(){
+
+           }
+        }
+        if (szam && betu) {
+            console.log('Van benne szám és betű is.');
+        }
+        
     }else{
         window.alert('Valamelyik jelszó nem elég hosszú.');
     }
